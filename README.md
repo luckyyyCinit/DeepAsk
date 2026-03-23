@@ -27,6 +27,7 @@ Instead of copy-pasting into ChatGPT or Claude, you can:
 ---
 
 ## 🧪 Demo
+Example: analyzing a twitter post by Andrej Karpathy.
 Before
 
 <img width="596" height="253" alt="image" src="https://github.com/user-attachments/assets/38cb6c5b-befb-4ec4-ae05-ad39c31adc46" />
