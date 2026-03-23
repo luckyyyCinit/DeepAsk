@@ -1,6 +1,7 @@
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
 ## Getting Started
+AI-powered Chrome extension that sends selected web text to an AI pipeline via right-click and renders responses directly on the page.
 
 First, run the development server:
 
