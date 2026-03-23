@@ -61,7 +61,9 @@ Enable Developer mode
 Click Load unpacked
 Select the project folder
 
-🏗️ System Design
+---
+
+##🏗️ System Design
 
 DeepAsk is built from scratch using Chrome Extension (Manifest V3), with an event-driven architecture:
 
@@ -86,7 +88,9 @@ Injects UI into DOM
 Renders responses inline
 manifest.json
 Defines extension lifecycle and permissions
-💡 Why I Built This
+---
+
+##💡 Why I Built This
 
 The current way we use AI is disconnected from context:
 
@@ -101,7 +105,9 @@ DeepAsk removes that friction.
 
 AI becomes part of your cognition loop — not a separate destination.
 
-🧠 Engineering Focus
+---
+
+##🧠 Engineering Focus
 
 This project explores:
 
@@ -109,7 +115,9 @@ Event-driven browser architectures
 Real-time DOM injection across arbitrary webpages
 Integrating AI inference into user workflows
 Designing AI as a context-aware system, not just an API call
-🔐 Privacy
+---
+
+##🔐 Privacy
 API keys stored locally in browser
 Text sent directly to AI provider
 No intermediate servers
@@ -119,7 +127,9 @@ No analytics or tracking
  Streaming response UI
  Multi-model support
  Prompt customization
-📌 Notes
+---
+
+##📌 Notes
 
 This project is implemented independently from scratch, inspired by existing AI browser tools, with a focus on understanding:
 
