@@ -29,12 +29,12 @@ Instead of copy-pasting into ChatGPT or Claude, you can:
 ## 🧪 Demo
 Example: analyzing a Twitter post by Andrej Karpathy — turning cryptic AI takes into clear reasoning.
 
-Before
+### Before: raw post
 
 <img width="596" height="253" alt="image" src="https://github.com/user-attachments/assets/38cb6c5b-befb-4ec4-ae05-ad39c31adc46" />
 
 
-After
+### After: AI interpretation (inline)
 
 <img width="598" height="937" alt="image" src="https://github.com/user-attachments/assets/85a7bc08-e9f0-4fc9-9166-bb836cab722e" />
 
