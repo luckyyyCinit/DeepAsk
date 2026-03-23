@@ -28,8 +28,8 @@ Instead of copy-pasting into ChatGPT or Claude, you can:
 
 ## 🧪 Demo
 
-<!-- Add a gif here -->
-![demo](./assets/demo.gif)
+<img width="598" height="937" alt="image" src="https://github.com/user-attachments/assets/85a7bc08-e9f0-4fc9-9166-bb836cab722e" />
+
 
 ---
 
@@ -46,7 +46,7 @@ Instead of copy-pasting into ChatGPT or Claude, you can:
 ### From Source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/luckyyyCinit/DeepAsk.git
 
 Then:
 
