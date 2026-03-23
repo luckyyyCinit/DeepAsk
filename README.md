@@ -1,34 +1,122 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# DeepAsk
 
-## Getting Started
-AI-powered Chrome extension that sends selected web text to an AI pipeline via right-click and renders responses directly on the page.
+**Turn passive browsing into active thinking.**
 
-First, run the development server:
+DeepAsk is an AI-native Chrome extension that lets you analyze any text on the web — instantly, inline, and without breaking your flow.
+
+Instead of copy-pasting into ChatGPT or Claude, you can:
+
+> Select → Right-click → Think deeper
+
+---
+
+## ✨ What It Does
+
+- 🔍 **Inline AI Reasoning**  
+  Instantly analyze selected text directly within the page
+
+- ⚡ **Zero Context Switching**  
+  No tab switching, no copy-paste — AI is embedded into your browsing flow
+
+- 🧠 **Context-aware analysis**  
+  Designed to break down arguments, assumptions, and hidden dynamics in online content
+
+- 🧩 **Built from scratch**  
+  End-to-end Chrome extension architecture (selection → background → content → DOM)
+
+---
+
+## 🧪 Demo
+
+<!-- Add a gif here -->
+![demo](./assets/demo.gif)
+
+---
+
+## 🚀 Usage
+
+1. Select any text on a webpage  
+2. Right-click → **DeepAsk**  
+3. View AI-generated insights directly below the selected content  
+
+---
+
+## ⚙️ Installation
+
+### From Source
 
 ```bash
-pnpm dev
-# or
-npm run dev
-```
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+Then:
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+Open Chrome → chrome://extensions/
+Enable Developer mode
+Click Load unpacked
+Select the project folder
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+🏗️ System Design
 
-## Making production build
+DeepAsk is built from scratch using Chrome Extension (Manifest V3), with an event-driven architecture:
 
-Run the following:
+User Selection
+   ↓
+Context Menu (background / service worker)
+   ↓
+AI Request Layer (mock → real API)
+   ↓
+Response Handling
+   ↓
+Content Script Injection
+   ↓
+Inline DOM Rendering
+Key Components
+background / service worker
+Handles context menu events
+Sends selected text to AI pipeline
+content script
+Captures selection position
+Injects UI into DOM
+Renders responses inline
+manifest.json
+Defines extension lifecycle and permissions
+💡 Why I Built This
 
-```bash
-pnpm build
-# or
-npm run build
-```
+The current way we use AI is disconnected from context:
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+You read something interesting
+You copy it
+You paste it into another tool
+You lose your flow
 
-## Submit to the webstores
+This friction reduces how often we actually think deeply.
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+DeepAsk removes that friction.
+
+AI becomes part of your cognition loop — not a separate destination.
+
+🧠 Engineering Focus
+
+This project explores:
+
+Event-driven browser architectures
+Real-time DOM injection across arbitrary webpages
+Integrating AI inference into user workflows
+Designing AI as a context-aware system, not just an API call
+🔐 Privacy
+API keys stored locally in browser
+Text sent directly to AI provider
+No intermediate servers
+No analytics or tracking
+🛠️ Roadmap
+ Token / cost tracking (per request)
+ Streaming response UI
+ Multi-model support
+ Prompt customization
+📌 Notes
+
+This project is implemented independently from scratch, inspired by existing AI browser tools, with a focus on understanding:
+
+Chrome extension architecture
+AI-native product design
+Context-aware interaction systems
