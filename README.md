@@ -27,7 +27,11 @@ Instead of copy-pasting into ChatGPT or Claude, you can:
 ---
 
 ## 🧪 Demo
+Before
+<img width="596" height="253" alt="image" src="https://github.com/user-attachments/assets/38cb6c5b-befb-4ec4-ae05-ad39c31adc46" />
 
+
+After
 <img width="598" height="937" alt="image" src="https://github.com/user-attachments/assets/85a7bc08-e9f0-4fc9-9166-bb836cab722e" />
 
 
